@@ -1,0 +1,36 @@
+{
+  "name": "ts-types-extractor",
+  "version": "0.0.1",
+  "author": {
+    "email": "pavel10_pushkarev@mail.ru",
+    "name": "Pavel Pushkarev"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "bin": {
+    "ts-extract-types": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "pkgroll --minify",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@types/prompts": "^2.4.9",
+    "commander": "^13.1.0",
+    "consola": "^3.4.0",
+    "prompts": "^2.4.2",
+    "typescript": "~5.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^22.10.7",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "pkgroll": "^2.6.1",
+    "type-fest": "^4.33.0",
+    "typescript-eslint": "^8.21.0"
+  }
+}
