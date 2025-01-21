@@ -9,7 +9,7 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "bin": {
-    "ts-extract-types": "./bin/index.js"
+    "ts-extract-types": "bin/index.js"
   },
   "scripts": {
     "build": "pkgroll --minify",
