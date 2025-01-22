@@ -2,7 +2,7 @@ import { program } from 'commander';
 import consola, { LogLevels } from 'consola';
 import ts from 'typescript';
 import { version } from '../package.json';
-import { ProgramOptions, resolveConfig } from './config';
+import { type Config, ProgramOptions, resolveConfig } from './config';
 import { generateTypes } from './generation';
 
 program
@@ -30,3 +30,5 @@ if (options.verbose) consola.level = LogLevels.verbose;
   generateTypes(config);
   consola.success(`Generated types to "${config.output}"`);
 })();
+
+export { Config };

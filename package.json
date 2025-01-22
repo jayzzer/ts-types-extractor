@@ -8,6 +8,7 @@
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist"
   ],
