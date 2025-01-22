@@ -11,9 +11,7 @@
   "files": [
     "dist"
   ],
-  "bin": {
-    "ts-extract-types": "bin/index.js"
-  },
+  "bin": "bin/index.js",
   "scripts": {
     "build": "pkgroll --minify",
     "prepublishOnly": "npm run build"
@@ -22,6 +20,7 @@
     "@types/prompts": "^2.4.9",
     "commander": "^13.1.0",
     "consola": "^3.4.0",
+    "glob": "^11.0.1",
     "prompts": "^2.4.2",
     "typescript": "~5.6.2"
   },
